@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="social media test suite" thread-count="3"
+	parallel="tests" verbose="1">
+
+	<test name="googleTest regression test-chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.apptest.GoogleTest" />
+		</classes>
+	</test>
+	<test name="googleTest regression test-firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="qa.apptest.GoogleTest" />
+		</classes>
+	</test>
+
+	<test name="Rediffmail regression test-chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.apptest.RediffmailTest" />
+		</classes>
+	</test>
+	
+	<test name="Rediffmail regression test-firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="qa.apptest.RediffmailTest" />
+		</classes>
+	</test>
+
+	<test name="FreshWorks regression test-chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.apptest.FreshWorksTest" />
+		</classes>
+	</test>
+	
+	<test name="FreshWorks regression test-firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="qa.apptest.FreshWorksTest" />
+		</classes>
+	</test>
+
+</suite>
